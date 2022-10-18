@@ -1,0 +1,10 @@
+asyncio 
+pyrogram
+tgcrypto
+requests
+bs4
+pymongo
+dnspython
+apscheduler 
+pyromod 
+youtube-dl
