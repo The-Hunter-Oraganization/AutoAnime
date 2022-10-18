@@ -1,4 +1,4 @@
-from soheru.database.client import users as db
+from Bot.database.client import users as db
 
 def new_user(id, auth=False):
     db.insert_one({'userid':int(id), 'auth':bool(auth)})

@@ -1,12 +1,12 @@
 import os 
 import random 
-from soheru import soheru
+from Bot import soheru
 from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardButton as IKB, InlineKeyboardMarkup as IKM
-from soheru.database.client import check_resolution, currentformat, enable_resolution, update_format
+from Bot.database.client import check_resolution, currentformat, enable_resolution, update_format
 
-from soheru.database.users import get_auth, is_reg, new_user
-from soheru.plugins.font_change import text_replace 
+from Bot.database.users import get_auth, is_reg, new_user
+from Bot.plugins.font_change import text_replace 
 
 
 LINK = [

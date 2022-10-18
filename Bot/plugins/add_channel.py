@@ -1,11 +1,11 @@
-from soheru import LOG, OWNER_ID, soheru as auto 
+from Bot import LOG, OWNER_ID, soheru as auto 
 from pyrogram import filters 
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-from soheru.database.channels import add_new, find_channel, remove
-from soheru.database.users import get_auth
+from Bot.database.channels import add_new, find_channel, remove
+from Bot.database.users import get_auth
 from pyromod import listen
-from soheru.utils.AnilistPython import anime_id_get, eng_name, jap_name
-from soheru.utils.telegraph import telegraph_file_upload
+from Bot.utils.AnilistPython import anime_id_get, eng_name, jap_name
+from Bot.utils.telegraph import telegraph_file_upload
 
 @auto.on_message(filters.command('remove', prefixes='/'))
 async def add_channels(client: auto, message: Message):

@@ -4,14 +4,14 @@ import subprocess
 import requests, asyncio
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from pyrogram.types import InlineKeyboardButton as IKB, InlineKeyboardMarkup as IKM, Message
-from soheru import ARCHIVE_CHANNEL, LOG, MAIN_CHANNEL, soheru 
-from soheru.database.channels import custom_file, custom_thumb, custom_wall, find_channel
-from soheru.database.client import check_resolution
-from soheru.database.rss import check_pending, new
-from soheru.plugins.api import AnimePahe
-from soheru.plugins.font_change import text_replace
-from soheru.utils.AnilistPython import anime_id_get, anime_thumb, animethumbnail, eng_name, jap_name
-from soheru.utils.decorators import message_status, upload_file
+from Bot import ARCHIVE_CHANNEL, LOG, MAIN_CHANNEL, soheru 
+from Bot.database.channels import custom_file, custom_thumb, custom_wall, find_channel
+from Bot.database.client import check_resolution
+from Bot.database.rss import check_pending, new
+from Bot.plugins.api import AnimePahe
+from Bot.plugins.font_change import text_replace
+from Bot.utils.AnilistPython import anime_id_get, anime_thumb, animethumbnail, eng_name, jap_name
+from Bot.utils.decorators import message_status, upload_file
 
 def image_download(link, file):
     img_data = requests.get(link).content

@@ -1,4 +1,4 @@
-from soheru.database.client import channels as db
+from Bot.database.client import channels as db
 
 def add_new( anime_title, anime_id, id, title=None, filethumb=None, thumbnail=None):
     db.insert_one({'anime_title':anime_title, 'anime_id':int(anime_id), 'channel':int(id), 'filethumb':filethumb, 'wallpaper':thumbnail, 'customtitle':title})

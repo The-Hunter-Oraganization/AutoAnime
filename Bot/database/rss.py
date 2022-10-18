@@ -1,4 +1,4 @@
-from soheru.database.client import rss as db
+from Bot.database.client import rss as db
 
 def new(title, episode, episode_session):
     db.insert_one({'anime_title':title, 'episode':int(episode), 'episode_session':episode_session, 'status':'finished'})

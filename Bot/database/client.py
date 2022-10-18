@@ -1,5 +1,5 @@
 from pymongo import MongoClient 
-from soheru import DATABASE_URL, OWNER_ID
+from Bot import DATABASE_URL, OWNER_ID
 
 clientdb = MongoClient(DATABASE_URL)
 typedb = clientdb['SoheruGroup']

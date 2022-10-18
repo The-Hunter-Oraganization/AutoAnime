@@ -4,7 +4,7 @@ import io
 import sys 
 import traceback
 import subprocess
-from soheru import soheru as main , OWNER_ID 
+from Bot import soheru as main , OWNER_ID 
 from pyrogram import filters 
 from pyrogram.types import Message 
 

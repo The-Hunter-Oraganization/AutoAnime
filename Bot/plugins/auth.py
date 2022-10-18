@@ -1,8 +1,8 @@
-from soheru import LOG, soheru as main
+from Bot import LOG, soheru as main
 from pyrogram import filters 
 from pyrogram.types import Message
-from soheru.database.users import get_auth, new_user, update_user
-from soheru.database.client import users as db
+from Bot.database.users import get_auth, new_user, update_user
+from Bot.database.client import users as db
 
 @main.on_message(filters.command(['auth', 'addsudo'], prefixes='!'))
 async def auth_user(client:main, message:Message):

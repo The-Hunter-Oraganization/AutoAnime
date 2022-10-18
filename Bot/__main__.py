@@ -1,8 +1,8 @@
 import os
 import asyncio 
 import requests 
-from soheru import LOG, soheru
-from soheru.database.client import startup
+from Bot import LOG, soheru
+from Bot.database.client import startup
 
 
 x = requests.get('http://api.soheru.in', allow_redirects=True).status_code

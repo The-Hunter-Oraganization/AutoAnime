@@ -1,7 +1,7 @@
-from soheru import LOG, MAIN_CHANNEL, soheru, MESSAGE_ID
+from Bot import LOG, MAIN_CHANNEL, soheru, MESSAGE_ID
 from pyrogram.types import InlineKeyboardButton as IKB, InlineKeyboardMarkup as IKM
 
-from soheru.plugins.font_change import text_replace
+from Bot.plugins.font_change import text_replace
 async def upload_file(file, chat, thumb=None, caption=None):
     try:
        files =  await soheru.send_document(int(chat), document=file, thumb=thumb, caption=caption)
