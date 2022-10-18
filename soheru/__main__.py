@@ -1,7 +1,7 @@
 import os
 import asyncio 
 import requests 
-from soheru import LOG, soheru, SESSION_STRING, usoheru
+from soheru import LOG, soheru
 from soheru.database.client import startup
 
 
