@@ -22,8 +22,4 @@ MAIN_CHANNEL = int(environ.get('MAIN_CHANNEL', None))#YOUR MAIN CHANNEL ID
 ARCHIVE_CHANNEL = int(environ.get('ARCHIVE_CHANNEL', None))#YOUR ARCHIVE CHANNEL
 MESSAGE_ID = int(environ.get('MESSAGE_ID', None)) #SUB CHANNEL STATUS ID
 
-try:
-    soheru = Client('SoheruBot', API_ID, API_HASH, bot_token=BOT_TOKEN, plugins=dict(root="soheru/plugins"))
-except Exception as e:
-    LOG.error(f'Unable To Connect With Client\nReason:{e}')    
-    exit() 
+soheru = Client('SoheruBot', API_ID, API_HASH, bot_token=BOT_TOKEN, plugins=dict(root="soheru/plugins"))
