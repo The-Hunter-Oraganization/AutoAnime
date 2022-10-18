@@ -38,6 +38,8 @@ We made this bot to automate the process of Telegram Anime Uploader, many kids t
 ### DOCKER DEPLOY
 
 ```
+[-] git clone your_fork_url
+[-] nano Bot/__init__.py edit variables (use (up and down keyboard buttons))
 [-] docker build . -t autopahe
 [-] docker run -d --restart on-failure --name autopahe autopahe
 ```
@@ -53,17 +55,18 @@ We made this bot to automate the process of Telegram Anime Uploader, many kids t
 [-] python3 -m Bot
 ```
 
-## DEV / Soheru
-
-### Contact
-
-[Github](https://github.com/soheru)</br>
-[Telegram](https://t.me/sohailkhan_indianime)</br>
-[Instagram](https://instagram.com/soherusan)</br>
-
-
 ### Heroku Deploy
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/The-Hunter-Oraganization/AutoAnime"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
+## DEV / Soheru
+### Contact
+
+[• Github](https://github.com/soheru)</br>
+[• Telegram](https://t.me/sohailkhan_indianime)</br>
+[• Instagram](https://instagram.com/soherusan)</br>
+
+
+
 
 
 
