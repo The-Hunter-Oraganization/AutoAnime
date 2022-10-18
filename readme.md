@@ -1,11 +1,11 @@
 ![AutoAnime](https://wallpaperaccess.com/full/2061.png)
 
 # Soheru Kan
-Soheru kan is the translation of name "Sohail Khan" in japanese, This Bot Were Created By Sohail Alone, No Extra Contributons. All credits goes to me.
+The name Soheru Kan translates to ("Sohail Khan") in Japanese, this bot was created by Sohail alone, no additional contributions. All credit goes to me.
 
 </br>
 
-We made this bot to automate process of telegram anime uploaders, Many kids were leaving there studies and doing uploading anime for normal weebs, so they can watch anime without any hassle. To help them we public our private AutoPahe Repo
+We made this bot to automate the process of Telegram Anime Uploader, many kids there were dropping out and uploading anime for Weebs, so that they can watch anime without any hassle. To help them we make our private AutoPahe repo public
 
 ## Features 
 
@@ -33,6 +33,13 @@ We made this bot to automate process of telegram anime uploaders, Many kids were
     [-] MAIN_CHANNEL: Your Main Channel Where Bot Will Update About Anime (E.g -10037823545)
     [-] MESSAGE_ID: Message Id of any message in main channel (E.g 40)'
 [+] The Bot won't run without setting the mandatory vars.
+```
+
+### DOCKER DEPLOY
+
+```
+[-] docker build . -t autopahe
+[-] docker run -d --restart on-failure --name autopahe autopahe
 ```
 
 ### Local Deploy
