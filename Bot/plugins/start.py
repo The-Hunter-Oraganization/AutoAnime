@@ -1,6 +1,6 @@
 import os 
 import random 
-from Bot import soheru
+from Bot import LOG, soheru
 from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardButton as IKB, InlineKeyboardMarkup as IKM
 from Bot.database.client import check_resolution, currentformat, enable_resolution, update_format
@@ -138,6 +138,6 @@ async def start_bot(client:soheru, message:Message):
     try:
         await message.reply_photo(random.choice(LINK), caption=text, reply_markup=button)
     except Exception as e:
-        print(e)    
+        LOG.warn(e)
     
     

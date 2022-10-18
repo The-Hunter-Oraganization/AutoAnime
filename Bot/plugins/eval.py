@@ -4,7 +4,7 @@ import io
 import sys 
 import traceback
 import subprocess
-from Bot import soheru as main , OWNER_ID 
+from Bot import LOG, soheru as main , OWNER_ID 
 from pyrogram import filters 
 from pyrogram.types import Message 
 
@@ -77,7 +77,7 @@ async def terminal(client: main, message: Message):
                     shell, stdout=subprocess.PIPE, stderr=subprocess.PIPE
                 )
             except Exception as err:
-                print(err)
+                LOG.warn(err)
                 await message.reply_text(
                     """
 **Error:**

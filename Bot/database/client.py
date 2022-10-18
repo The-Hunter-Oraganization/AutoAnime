@@ -9,7 +9,6 @@ globaldb = typedb['globaldb']
 rss = typedb['rss']
 
 def startup():
-    print('start')
     x = globaldb.find_one({'setup_done':True})
     if x is not None:
         return 

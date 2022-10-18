@@ -1,5 +1,7 @@
 
 import requests
+
+from Bot import LOG
 anime_query = """
 query ($id: Int, $idMal:Int, $search: String, $type: MediaType, $asHtml: Boolean) {
   Media (id: $id, idMal: $idMal, search: $search, type: $type) {
@@ -76,7 +78,7 @@ def animethumbnail(query):
             'variables': variables
         }).json()
     if 'errors' in json.keys():
-        print("[Error] No Thumbnail Exception Error.")
+        LOG.warn("[Error] No Thumbnail Exception Error.")
         image = "https://telegra.ph/file/ee05a623c981ccf5874a6.jpg"
         return image
     if json:

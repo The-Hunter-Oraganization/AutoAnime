@@ -142,7 +142,6 @@ async def add_channels(client: auto, message: Message):
         #<------------DATABASE ADD NOW----------->    
     try: 
         check_channel = find_channel(id_anime)
-        print(check_channel)
         if check_channel is None:
             add_new(anime_title, id_anime, anime_channel, file_name, thumb, thumbnail)
             text = f"Added \n**Anime Title** : {anime_title}\n**Anime ID**  :{id_anime}\n**Channel ID** : {anime_channel}"

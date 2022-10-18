@@ -74,7 +74,6 @@ async def process():
                 pass 
             else:
                 if len(sources) < 3:
-                    time.sleep(120)
                     LOG.error(f'Senpai Skipping Due To Only 1 Few {anime_title} - {episode} Episodes Available Of this anime')
                     continue
             if anime_title not in working_list:
@@ -138,7 +137,7 @@ async def process():
             LINKS.clear()        
             for x in files_downloaded:
                 try:
-                    time.sleep(14)
+                    await asyncio.sleep(14)
                     video = await upload_file(x[0], UPLOAD_CHANNEL, thumb=thumb_file, caption=TYPE_SEND_CAPTION)
                     LINKS.append(IKB(text_replace(f"✨{episode}-{x[1]}✨"), url=video.link))
                 except Exception as e:
@@ -161,7 +160,7 @@ async def process():
             new(anime_title, episode, episode_session)   
              
 scheduler = AsyncIOScheduler()
-scheduler.add_job(process, "interval", seconds=5)
+scheduler.add_job(process, "interval", seconds=60)
 scheduler.start()        
         
                     
