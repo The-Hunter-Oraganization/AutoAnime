@@ -7,7 +7,7 @@ from pyromod import listen
 if path.exists('error.log'):
     remove('error.log')
     
-logging.basicConfig(filename='error.log', level=logging.INFO)
+logging.basicConfig(level=logging.INFO)
 LOG = logging.getLogger("AutoPahe")
 LOG.setLevel(level=logging.INFO)
 
@@ -22,4 +22,4 @@ MAIN_CHANNEL = int(environ.get('MAIN_CHANNEL', None))#YOUR MAIN CHANNEL ID
 ARCHIVE_CHANNEL = int(environ.get('ARCHIVE_CHANNEL', None))#YOUR ARCHIVE CHANNEL
 MESSAGE_ID = int(environ.get('MESSAGE_ID', None)) #SUB CHANNEL STATUS ID
 
-soheru = Client('SoheruBot', API_ID, API_HASH, bot_token=BOT_TOKEN, plugins=dict(root="soheru/plugins"))
+soheru = Client('SoheruBots', api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN, plugins=dict(root="Bot/plugins"))

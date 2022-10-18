@@ -8,6 +8,8 @@ from Bot.database.client import startup
 x = requests.get('http://api.soheru.in', allow_redirects=True).status_code
 if x == 200:
     print(True)
+else:
+    sys.exit()    
 
 for x in os.listdir("."):
     if "mp4" in x:

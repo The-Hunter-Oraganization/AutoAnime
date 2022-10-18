@@ -96,7 +96,7 @@ async def process():
                     await message_status(text_replace(status("**Downloading**", anime_title, episode, resolution, file_name)))
                     if file_name not in files_downloaded:
                         files_downloaded.append((file_name, resolution))
-                        proce = await asyncio.create_subprocess_shell(f"youtube-dl --add-header Referer:'https://kwik.cx/' {url} -o '/home/ubuntu/AutoPahe/pahe/{file_name}'", stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
+                        proce = await asyncio.create_subprocess_shell(f"youtube-dl --add-header Referer:'https://kwik.cx/' {url} -o '{file_name}'", stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
                         await proce.communicate() 
             await message_status(text_replace(status("**Downloaded Files**", anime_title, episode)))
             UPLOAD_CHANNEL = find_channel(anime_id)
@@ -158,9 +158,10 @@ async def process():
             await message_status("**‣ sᴛᴀᴛᴜs** : `ɪᴅʟᴇ`")    
             resolutions.clear()
             files_downloaded.clear()   
-            new(anime_title, episode, episode_session)    
+            new(anime_title, episode, episode_session)   
+             
 scheduler = AsyncIOScheduler()
-scheduler.add_job(process, "interval", seconds=60)
+scheduler.add_job(process, "interval", seconds=5)
 scheduler.start()        
         
                     
