@@ -1,5 +1,7 @@
 ![AutoAnime](https://wallpaperaccess.com/full/2061.png)
 
+# No More Works AnyMore, You can Use this For Learning Purpose. 
+
 # Soheru Kan
 The name Soheru Kan translates to ("Sohail Khan") in Japanese, this bot was created by Sohail alone, no additional contributions. All credit goes to me.
 
